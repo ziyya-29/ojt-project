@@ -2,11 +2,10 @@ import {Link} from 'react-router-dom'
 import './Header.css';
 import { useState } from 'react';
 function Header () {
-     const [isDrawerOpen, setIsDrawerOpen] = useState(false); // State to control drawer visibility
+     const [isDrawerOpen, setIsDrawerOpen] = useState(false); 
       const toggleDrawer = () => {
         setIsDrawerOpen(!isDrawerOpen);
       };
-      // Function to close drawer when a link is clicked
       const closeDrawer = () => {
         setIsDrawerOpen(false);
       };
